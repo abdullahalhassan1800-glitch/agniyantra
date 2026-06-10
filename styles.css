@@ -469,8 +469,11 @@ header.scrolled {
     }
 
     .hero-slides-container {
-        aspect-ratio: auto;
-        height: 200px;
+        aspect-ratio: 2.4 / 1;
+    }
+
+    .hero-slide-link {
+        background: #FAF5ED;
     }
 
     .hero-slide-link img {
