@@ -447,14 +447,8 @@ header.scrolled {
     }
 }
 
-@media (max-width: 480px) {
-    .hero-carousel {
-        min-height: 120px; /* Safe minimum height for mobile viewports */
-    }
-}
-
 .hero-carousel::after {
-    display: none; /* Completely disable the bottom fading gradient mask so the full banner and specifications are visible */
+    display: none;
 }
 
 .hero-slides-container {
@@ -470,8 +464,18 @@ header.scrolled {
 }
 
 @media (max-width: 480px) {
+    .hero-carousel {
+        min-height: auto;
+    }
+
     .hero-slides-container {
-        aspect-ratio: 1.6 / 1;
+        aspect-ratio: auto;
+        height: 200px;
+    }
+
+    .hero-slide-link img {
+        object-fit: contain;
+        background: #FAF5ED;
     }
 }
 
