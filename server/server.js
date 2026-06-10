@@ -15,10 +15,17 @@ app.get('/api/ping', (req, res) => {
 
 app.post('/api/chat', async (req, res) => {
   try {
-    const { message, history } = req.body;
+    const body = req.body;
+    const contentType = req.headers['content-type'];
+
+    if (!body || typeof body !== 'object') {
+      return res.status(400).json({ error: 'Invalid body', type: typeof body, contentType, body });
+    }
+
+    const { message, history } = body;
 
     if (!message || !message.trim()) {
-      return res.status(400).json({ error: 'Message is required' });
+      return res.status(400).json({ error: 'Message is required', body });
     }
 
     const systemPrompt = {
