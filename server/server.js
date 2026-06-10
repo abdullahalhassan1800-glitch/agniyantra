@@ -7,10 +7,11 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(cors());
-app.use(express.json());
+app.use(express.json({ type: ['application/json', 'text/plain'] }));
 
-// Serve the static site
-app.use(express.static(path.join(__dirname, '..')));
+app.get('/api/ping', (req, res) => {
+  res.json({ ok: true, port: process.env.PORT, hasKey: !!process.env.NVIDIA_API_KEY, cwd: process.cwd(), dirname: __dirname });
+});
 
 app.post('/api/chat', async (req, res) => {
   try {
@@ -84,6 +85,13 @@ Products available:
     console.error('Chat error:', err);
     res.status(500).json({ error: 'Internal server error' });
   }
+});
+
+// Serve static files AFTER API routes
+app.use(express.static(path.join(__dirname, '..')));
+
+app.use((req, res) => {
+  res.status(404).json({ error: 'Not found' });
 });
 
 app.listen(PORT, () => {
