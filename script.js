@@ -1573,3 +1573,15 @@ if (heroSlides.length > 0) {
     
     startHeroAutoplay();
 }
+
+// ==========================================
+// MOBILE NAV TOGGLE
+// ==========================================
+function toggleNav() {
+    const nav = document.querySelector('.nav-links');
+    const overlay = document.querySelector('.nav-overlay');
+    if (!nav) return;
+    nav.classList.toggle('open');
+    if (overlay) overlay.classList.toggle('open');
+    document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
+}

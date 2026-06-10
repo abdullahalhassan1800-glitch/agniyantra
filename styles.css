@@ -398,8 +398,8 @@ header.scrolled {
     }
 
     .nav-toggle {
-        order: 0;
-        justify-self: start;
+        order: 2;
+        justify-self: end;
     }
 
     .nav-actions {
@@ -409,8 +409,8 @@ header.scrolled {
     }
 
     .nav-container .logo {
-        order: 2;
-        justify-self: end;
+        order: 0;
+        justify-self: start;
     }
 
     .icon-btn {
