@@ -2139,7 +2139,7 @@ footer {
 /* Floating WhatsApp Badge Support */
 .whatsapp-badge {
     position: fixed;
-    bottom: 30px;
+    bottom: 100px;
     right: 30px;
     background-color: #25D366;
     color: white;
@@ -2695,7 +2695,7 @@ footer {
 /* Floating WhatsApp Helpdesk Badge */
 .whatsapp-badge {
     position: fixed;
-    bottom: 30px;
+    bottom: 100px;
     right: 30px;
     width: 60px;
     height: 60px;
