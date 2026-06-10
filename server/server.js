@@ -6,35 +6,15 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-function rawBodyMiddleware(req, res, next) {
-  let data = '';
-  req.on('data', chunk => data += chunk);
-  req.on('end', () => {
-    try {
-      req.body = JSON.parse(data);
-    } catch (e) {
-      req.body = data || {};
-    }
-    next();
-  });
-}
-
 app.use(cors());
-app.use(rawBodyMiddleware);
-
-app.get('/api/ping', (req, res) => {
-  res.json({ ok: true, port: process.env.PORT, hasKey: !!process.env.NVIDIA_API_KEY, cwd: process.cwd(), dirname: __dirname });
-});
+app.use(express.json());
 
 app.post('/api/chat', async (req, res) => {
   try {
-    const body = req.body;
-    const contentType = req.headers['content-type'];
-
-    const { message, history } = body || {};
+    const { message, history } = req.body;
 
     if (!message || !message.trim()) {
-      return res.status(400).json({ error: 'Message is required', body, contentType, type: typeof body });
+      return res.status(400).json({ error: 'Message is required' });
     }
 
     const systemPrompt = {
