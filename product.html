@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certified Vastu Floor Correction Strip | Agniyantra Store</title>
+    <meta name="description" content="Detailed dimensions and directional guidelines for Agniyantra pure Vastu strips. Standard government certified gauges for door corrections.">
+    
+    <!-- Unified CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/chatbot.css">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <style>
+        .product-detail-container {
+            max-width: 1400px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1.6fr 1fr;
+            gap: 3rem;
+        }
+
+        .product-gallery {
+            position: relative;
+        }
+
+        .main-image {
+            width: 100%;
+            border-radius: var(--radius-sm);
+            background: #FAF9F6;
+            padding: 0.5rem;
+            margin-bottom: 1.25rem;
+            border: 1px solid var(--clr-border);
+            transition: var(--transition-premium);
+        }
+
+        .thumbnail-list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.25rem;
+        }
+
+        .thumbnail {
+            width: 100%;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            border: 2px solid transparent;
+            background: #FAF9F6;
+            padding: 10px;
+            transition: var(--transition-quick);
+            border: 1px solid var(--clr-border);
+        }
+
+        .thumbnail:hover, .thumbnail.active {
+            border-color: var(--clr-gold);
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .product-meta h1 {
+            font-size: 2.4rem;
+            font-weight: 500;
+            line-height: 1.25;
+            margin-bottom: 1rem;
+        }
+
+        .price-large {
+            font-size: 2rem;
+            color: var(--clr-gold-dark);
+            font-weight: 800;
+            margin-bottom: 2rem;
+        }
+
+        .price-large del {
+            color: var(--clr-text-muted);
+            font-size: 1.15rem;
+            font-weight: 400;
+            margin-left: 10px;
+        }
+
+        .product-description {
+            color: var(--clr-text-muted);
+            font-size: 1.05rem;
+            margin-bottom: 2.5rem;
+            line-height: 1.8;
+        }
+
+        .product-form {
+            margin-bottom: 2.5rem;
+            padding-bottom: 2.5rem;
+            border-bottom: 1px solid var(--clr-border);
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .quantity-selector {
+            display: inline-flex;
+            align-items: center;
+            border: 1px solid var(--clr-border);
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            background-color: #FAF9F6;
+        }
+
+        .qty-btn {
+            background: none;
+            border: none;
+            padding: 0.8rem 1.2rem;
+            cursor: pointer;
+            font-size: 1.2rem;
+            color: var(--clr-text-dark);
+            transition: var(--transition-quick);
+        }
+
+        .qty-btn:hover {
+            background-color: #E2E0D9;
+        }
+
+        .qty-input {
+            width: 50px;
+            text-align: center;
+            border: none;
+            font-size: 1.05rem;
+            font-family: var(--font-body);
+            font-weight: 700;
+            background: none;
+        }
+
+        .add-to-cart-btn {
+            padding: 1.05rem 3.5rem;
+            font-size: 0.95rem;
+        }
+
+        .product-meta-details {
+            font-size: 0.9rem;
+            color: var(--clr-text-muted);
+        }
+
+        .product-meta-details p {
+            margin-bottom: 0.65rem;
+        }
+
+        .product-meta-details span {
+            color: var(--clr-text-dark);
+            font-weight: 700;
+        }
+
+        .product-tabs {
+            max-width: 1400px;
+            margin: 4rem auto 8rem;
+            padding: 0 2rem;
+        }
+
+        @media (max-width: 992px) {
+            .product-detail-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Promo Bar -->
+    <div class="top-bar">
+        <div><i class="ph ph-sparkle"></i> Free Shipping on Vastu Remedies Above ₹5,000</div>
+        <div><i class="ph ph-phone"></i> Helpline: +91 9654666603 &nbsp;|&nbsp; <a href="contact.html">Support</a></div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header id="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="logo.png" alt="Agniyantra Logo" class="logo-img"></a>
+            
+            <button class="nav-toggle" onclick="toggleNav()" aria-label="Menu">
+                <i class="ph ph-list"></i>
+            </button>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="shop.html" class="active">Shop</a>
+                <a href="pages/landing/landing.html">Strips</a>
+                <a href="studs.html">Studs</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="nav-overlay" onclick="toggleNav()"></div>
+            
+            <div class="nav-actions">
+                <button class="icon-btn" aria-label="Search" onclick="showToast('Search overlay is opening...')" title="Search">
+                    <i class="ph ph-magnifying-glass"></i>
+                </button>
+                <button class="icon-btn" aria-label="Account" onclick="showToast('Login panel is loading...')" title="Account">
+                    <i class="ph ph-user"></i>
+                </button>
+                <button class="icon-btn" aria-label="Wishlist" onclick="showToast('Loading your Vastu Wishlist...')" title="Wishlist">
+                    <i class="ph ph-heart"></i>
+                </button>
+                <button class="icon-btn" aria-label="Cart" onclick="openCartDrawer()" title="Open Cart">
+                    <i class="ph ph-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb" style="padding: 1.5rem 2rem; background: #FAF9F6; border-bottom: 1px solid var(--clr-border); font-size: 0.85rem; letter-spacing: 0.5px;">
+        <a href="index.html">Home</a> <span>/</span> 
+        <a href="shop.html">Remedies Shop</a> <span>/</span>
+        <a href="shop.html?category=strips">Vastu Strips</a> <span>/</span>
+        <span style="color: var(--clr-text-dark); font-weight: 700;">Premium Elemental Correction Strip</span>
+    </div>
+
+    <!-- Product Details Content -->
+    <main class="product-detail-container">
+        <!-- Gallery with responsive Image Magnifier -->
+        <div class="product-gallery">
+            <div class="magnifier-container">
+                <img src="https://agniyantra.in/wp-content/uploads/2025/12/3-2.webp" alt="Premium Vastu Stainless Steel Strip" class="main-image" id="mainImage">
+            </div>
+            <div class="thumbnail-list">
+                <img src="https://agniyantra.in/wp-content/uploads/2025/12/3-2.webp" class="thumbnail active" onclick="document.getElementById('mainImage').src=this.src; document.querySelectorAll('.thumbnail').forEach(t=>t.classList.remove('active')); this.classList.add('active');" alt="SS Strip thumb 1">
+                <img src="https://agniyantra.in/wp-content/uploads/2025/12/BRASS-STRIPES-pack-of-2-1.png" class="thumbnail" onclick="document.getElementById('mainImage').src=this.src; document.querySelectorAll('.thumbnail').forEach(t=>t.classList.remove('active')); this.classList.add('active');" alt="SS Strip thumb 2">
+            </div>
+        </div>
+
+        <!-- Product Information Meta -->
+        <div class="product-meta">
+            <h1>Premium Vastu Floor Correction Strip</h1>
+            <div class="rating-stars" style="justify-content: flex-start; margin-bottom: 1rem;">
+                <i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i>
+                <span style="color: var(--clr-text-muted); font-size: 0.85rem; margin-left: 8px;">(4.9 based on 28 Verified buyer reviews)</span>
+            </div>
+            
+            <div class="price-large">₹1,999 <del>₹4,442</del></div>
+            
+            <!-- Dynamic Swatches Material selectors (Updates tables and prices instantly) -->
+            <div style="margin-bottom: 2rem;">
+                <label style="font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; display: block; margin-bottom: 0.5rem; color: var(--clr-text-dark);">Select Metal Material:</label>
+                <div class="swatch-group">
+                    <button class="swatch-btn active" data-material="Stainless Steel" data-price="1999" data-orig="4442">Stainless Steel (Space/West)</button>
+                    <button class="swatch-btn" data-material="Pure Red Copper" data-price="1499" data-orig="4542">Red Copper (Fire/South)</button>
+                    <button class="swatch-btn" data-material="Pure Brass" data-price="2199" data-orig="5499">Pure Brass (Earth/South-West)</button>
+                    <button class="swatch-btn" data-material="Pure Aluminium" data-price="2499" data-orig="5681">Aluminium (Air/Northeast)</button>
+                </div>
+            </div>
+
+            <div class="product-description">
+                <p>Designed strictly for elemental zone floor corrections where structural breaking is completely restricted. Our heavy gauge divider strip blocks bad electromagnetic vibes, seals entrance leakages, and corrects toilet directional cuts permanently.</p>
+            </div>
+
+            <!-- Add to Cart controls -->
+            <div class="product-form">
+                <div class="quantity-selector">
+                    <button class="qty-btn" onclick="const q=document.getElementById('qty'); if(q.value>1) q.value--;">-</button>
+                    <input type="number" id="qty" class="qty-input" value="1" min="1" readonly>
+                    <button class="qty-btn" onclick="document.getElementById('qty').value++;">+</button>
+                </div>
+                <button class="btn btn-primary add-to-cart-btn" onclick="addToCart('ss-strip-10', parseInt(document.getElementById('qty').value))">Add to Cart</button>
+                <button class="action-btn" onclick="showToast('Remedy saved to wishlist')" style="width: 50px; height: 50px;"><i class="ph ph-heart"></i></button>
+            </div>
+
+            <div class="product-meta-details">
+                <p>SKU: <span>AGNI-STRIP-VAR</span></p>
+                <p>Category: <span><a href="shop.html?category=strips" style="color: var(--clr-gold-dark);">Vastu Strips</a></span></p>
+                <p>Core Tags: <span>Divider Strip, Floor Correction, Door Threshold, Vedic Remedy</span></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Information Tabs Dashboard -->
+    <section class="product-tabs">
+        <div class="tab-headers">
+            <button class="tab-btn active">Description</button>
+            <button class="tab-btn">Vastu Specifications</button>
+            <button class="tab-btn">Verified Reviews (28)</button>
+        </div>
+        <div class="tab-content" style="color: var(--clr-text-muted); line-height: 1.85; font-size: 1rem;">
+            <p>Our Vastu floor remedy products are designed to completely cut, block, or anchor unwanted spatial energies. Perfect for apartments, commercial stores, or office layouts where demolition is impossible. Recommended for precise placements under doors, tiles, or along borders. Made from solid, non-rusting premium elemental grades for permanent shielding effects.</p>
+        </div>
+    </section>
+
+    <!-- Footer Architecture -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo"><img src="logo.png" alt="Agniyantra Logo" class="logo-img logo-light"></a>
+                <p>We provide authentic, certified, and spiritually energized Vastu remedies to restore architectural energy balances across your home and offices.</p>
+                <div class="footer-social">
+                    <button class="action-btn" title="Facebook"><i class="ph ph-facebook-logo"></i></button>
+                    <button class="action-btn" title="Instagram"><i class="ph ph-instagram-logo"></i></button>
+                    <button class="action-btn" title="YouTube"><i class="ph ph-youtube-logo"></i></button>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop remedies</a></li>
+                    <li><a href="about.html">About story</a></li>
+                    <li><a href="contact.html">Contact expert</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Vastu Remedies</h4>
+                <ul class="footer-links">
+                    <li><a href="shop.html?category=strips">Copper & Brass Strips</a></li>
+                    <li><a href="shop.html?category=studs">Solid Energy Studs</a></li>
+                    <li><a href="shop.html?category=idols">Sacred Helixes</a></li>
+                    <li><a href="shop.html?category=combo">Vastu Combo Packs</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Support & Trust</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">Purity Certificates</a></li>
+                    <li><a href="contact.html">Expert Consulting</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Agniyantra Ltd. All rights reserved.</p>
+            <p>Designed for Ultimate Architectural Harmony</p>
+        </div>
+    </footer>
+
+    <!-- DYNAMIC GLASSMORPHIC SLIDE-OUT CART DRAWER OVERLAY -->
+    <div class="cart-drawer-overlay">
+        <div class="cart-drawer">
+            <div class="cart-drawer-header">
+                <h3>Shopping Cart (<span class="cart-count">0</span>)</h3>
+                <button class="close-drawer-btn" onclick="closeCartDrawer()" aria-label="Close Cart"><i class="ph ph-x"></i></button>
+            </div>
+            
+            <div class="shipping-progress-container">
+                <div class="shipping-message">Add Vastu remedies to get FREE delivery nationwide!</div>
+                <div class="shipping-progress-bar">
+                    <div class="shipping-progress-fill"></div>
+                </div>
+            </div>
+            
+            <div class="cart-drawer-items">
+                <!-- Dynamically injected by JS -->
+            </div>
+            
+            <div class="cart-drawer-footer">
+                <div class="drawer-subtotal-row">
+                    <span>Subtotal:</span>
+                    <span class="drawer-subtotal-val">₹0.00</span>
+                </div>
+                <div class="drawer-checkout-btns">
+                    <a href="cart.html" class="btn btn-outline" style="width: 100%;">View Full Cart</a>
+                    <a href="cart.html" class="btn btn-primary" style="width: 100%;">Proceed To Checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Global Toast notifications container -->
+    <div class="toast-container"></div>
+
+    <script src="script.js"></script>
+    <script src="assets/js/chatbot.js"></script>
+</body>
+</html>

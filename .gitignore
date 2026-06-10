@@ -1,0 +1,11 @@
+.meta-panel-trigger
+meta.bat
+.env
+node_modules/
+server/node_modules/
+.vscode/
+*.log
+*.mp4
+*.zip
+*.pdf
+DUST/

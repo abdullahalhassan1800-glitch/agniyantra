@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Vastu Metal Strips | Agniyantra Remedies</title>
+    <meta name="description" content="Balance energy and build harmony with Agniyantra's certified Vastu Metal Strips. Available in Brass, Copper, Aluminium, Stainless Steel, and Iron. Custom White Labelling available.">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../../assets/css/chatbot.css">
+</head>
+<body>
+
+    <!-- Top Promo Bar -->
+    <div class="top-bar">
+        <div><i class="ph ph-sparkle"></i> Free Shipping on Vastu Remedies Above ₹5,000</div>
+        <div><i class="ph ph-phone"></i> Helpline: +91 9654666603 &nbsp;|&nbsp; <a href="../../contact.html">Support</a></div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header id="header">
+        <div class="nav-container">
+            <a href="../../index.html" class="logo"><img src="images/logo.png" alt="Agniyantra Logo" class="logo-img"></a>
+            <nav class="nav-links">
+                <a href="../../index.html">Home</a>
+                <a href="../../about.html">About Us</a>
+                <a href="../../contact.html">Contact Us</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="icon-btn" aria-label="Search" onclick="openSearchPortal()" title="Search"><i class="ph ph-magnifying-glass"></i></button>
+                <button class="icon-btn" aria-label="Account" onclick="showToast('Login panel is loading...')" title="Account"><i class="ph ph-user"></i></button>
+                <button class="icon-btn" aria-label="Wishlist" onclick="showToast('Loading your Vastu Wishlist...')" title="Wishlist"><i class="ph ph-heart"></i></button>
+                <button class="icon-btn" aria-label="Cart" onclick="openCartDrawer()" title="Open Cart"><i class="ph ph-shopping-cart"></i><span class="cart-count">0</span></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="landing-hero">
+        <div class="hero-bg-orb orb-1"></div>
+        <div class="hero-bg-orb orb-2"></div>
+        <div class="hero-particles">
+            <span class="hero-particle"></span>
+            <span class="hero-particle"></span>
+            <span class="hero-particle"></span>
+            <span class="hero-particle"></span>
+            <span class="hero-particle"></span>
+            <span class="hero-particle"></span>
+            <span class="hero-particle"></span>
+            <span class="hero-particle"></span>
+        </div>
+        <div class="hero-container">
+            <div class="hero-left">
+                <div class="hero-logo-box">
+                    <img src="images/logo.png" alt="Agniyantra Logo" class="logo-light">
+                    <span>AGNI<span class="gold">YANTRA</span></span>
+                </div>
+                <h1 class="hero-title">
+                    PREMIUM VASTU<br>METAL STRIPS
+                    <span class="highlight">Balance Energy, Build Harmony</span>
+                </h1>
+                <div class="hero-tagline">5 Certified Metals for Directional Energy Correction</div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-num">99.6%</div>
+                        <div class="hero-stat-label">ISO Purity</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-num">5</div>
+                        <div class="hero-stat-label">Metal Finishes</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-num">10K+</div>
+                        <div class="hero-stat-label">Happy Homes</div>
+                    </div>
+                </div>
+                <div class="hero-cta-row">
+                    <a href="../../index.html" class="hero-cta-secondary"><i class="ph ph-storefront"></i> Visit Main Store</a>
+                    <a href="#finishes-showcase" class="hero-cta-primary"><i class="ph ph-shopping-cart"></i> Shop Now</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="slider-card">
+                    <div class="slider-card-glow"></div>
+                    <div class="slider-progress-bar">
+                        <div class="slider-progress-fill" id="sliderProgressFill"></div>
+                    </div>
+                    <div class="slide active" data-index="0">
+                        <div class="slide-inner">
+                            <div class="product-visual">
+                                <img src="images/111.jpg" alt="Brass Vastu Strip">
+                                <span class="slide-badge"><i class="ph ph-crown"></i> Earth Element</span>
+                            </div>
+                            <div class="slide-title">BRASS STRIP</div>
+                            <div class="slide-zone">SW & Center Zones</div>
+                            <div class="slide-price">₹2,299 <span>/ 10.2ft</span></div>
+                            <button class="slide-add-btn" onclick="event.stopPropagation(); addToCart('brass-strip-10')"><i class="ph ph-shopping-cart"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="slide" data-index="1">
+                        <div class="slide-inner">
+                            <div class="product-visual">
+                                <img src="images/1111.jpg" alt="Aluminium Vastu Strip">
+                                <span class="slide-badge"><span style="background:rgba(0,0,0,0.3);padding:1px 4px;border-radius:3px;font-size:0.6rem;">Al</span> Air Element</span>
+                            </div>
+                            <div class="slide-title">ALUMINIUM STRIP</div>
+                            <div class="slide-zone">NE & East Zones</div>
+                            <div class="slide-price">₹2,499 <span>/ Pack of 3</span></div>
+                            <button class="slide-add-btn" onclick="event.stopPropagation(); addToCart('alu-strip-10')"><i class="ph ph-shopping-cart"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="slide" data-index="2">
+                        <div class="slide-inner">
+                            <div class="product-visual">
+                                <img src="images/11.jpg" alt="Copper Vastu Strip">
+                                <span class="slide-badge"><i class="ph ph-sparkles"></i> Fire Element</span>
+                            </div>
+                            <div class="slide-title">COPPER STRIP</div>
+                            <div class="slide-zone">SE & South Zones</div>
+                            <div class="slide-price">₹1,499 <span>/ 8ft</span></div>
+                            <button class="slide-add-btn" onclick="event.stopPropagation(); addToCart('copper-strip-8')"><i class="ph ph-shopping-cart"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="slide" data-index="3">
+                        <div class="slide-inner">
+                            <div class="product-visual">
+                                <img src="images/111111.jpg" alt="Stainless Steel Vastu Strip">
+                                <span class="slide-badge"><i class="ph ph-shield"></i> Space Element</span>
+                            </div>
+                            <div class="slide-title">STEEL STRIP</div>
+                            <div class="slide-zone">W & NW Zones</div>
+                            <div class="slide-price">₹1,999 <span>/ 10.2ft</span></div>
+                            <button class="slide-add-btn" onclick="event.stopPropagation(); addToCart('ss-strip-10')"><i class="ph ph-shopping-cart"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="slide" data-index="4">
+                        <div class="slide-inner">
+                            <div class="product-visual">
+                                <img src="images/11111.jpg" alt="Iron Vastu Strip">
+                                <span class="slide-badge"><i class="ph ph-anchor"></i> Saturn / Space</span>
+                            </div>
+                            <div class="slide-title">IRON STRIP</div>
+                            <div class="slide-zone">W & NW Sectors</div>
+                            <div class="slide-price">₹1,199 <span>/ 10.2ft</span></div>
+                            <button class="slide-add-btn" onclick="event.stopPropagation(); addToCart('iron-strip-10')"><i class="ph ph-shopping-cart"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="slider-nav-row">
+                        <button class="slider-arrow prev" onclick="changeSlide(-1)" aria-label="Previous Slide"><i class="ph ph-caret-left"></i></button>
+                        <div class="slider-dots">
+                            <button class="slider-dot active" onclick="setSlide(0)" aria-label="Slide 1"></button>
+                            <button class="slider-dot" onclick="setSlide(1)" aria-label="Slide 2"></button>
+                            <button class="slider-dot" onclick="setSlide(2)" aria-label="Slide 3"></button>
+                            <button class="slider-dot" onclick="setSlide(3)" aria-label="Slide 4"></button>
+                            <button class="slider-dot" onclick="setSlide(4)" aria-label="Slide 5"></button>
+                        </div>
+                        <button class="slider-arrow next" onclick="changeSlide(1)" aria-label="Next Slide"><i class="ph ph-caret-right"></i></button>
+                    </div>
+                </div>
+                <div class="slider-caption"><i class="ph ph-sparkles"></i> Auto-rotating showcase. Tap arrows or dots to navigate.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="trust-section">
+        <div class="trust-grid">
+            <div class="trust-item">
+                <i class="ph ph-certificate"></i>
+                <div>
+                    <h4>99.6% ISO Pure Certified</h4>
+                    <p>Spectrometer verified chemical purity. Zero scrap alloys used.</p>
+                </div>
+            </div>
+            <div class="trust-item">
+                <i class="ph ph-fire"></i>
+                <div>
+                    <h4>Vedic Energized</h4>
+                    <p>Ritually planetary shanti energized before packing to maximize vibrations.</p>
+                </div>
+            </div>
+            <div class="trust-item">
+                <i class="ph ph-map-pin-line"></i>
+                <div>
+                    <h4>Demolition-Free Correction</h4>
+                    <p>Easy floor slot insertion blocks negative frequencies without breaking walls.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Finishes Showcase -->
+    <section class="section" id="finishes-showcase">
+        <div class="section-header">
+            <h2>Available in 5 Premium Finishes</h2>
+            <p>Each metal corresponds to specific directional elements (Mahabhutas) according to Vedic Shastra.</p>
+        </div>
+        <div class="finishes-grid">
+            <div class="finish-card" id="finish-brass">
+                <img src="images/111.jpg" class="finish-img" alt="Brass Vastu Strip">
+                <div class="finish-zone">Earth element</div>
+                <h3>Brass Vastu Strip</h3>
+                <p class="finish-desc">Governs Southwest & Center zones. Vital for correcting southwest toilets, kitchen locations, or unstable entry lines.</p>
+                <div class="finish-price">₹2,299 <span style="font-size:0.75rem; color:var(--clr-text-muted);">/ 10.2ft</span></div>
+                <button class="btn-add-cart" onclick="addToCart('brass-strip-10')"><i class="ph ph-shopping-cart"></i> Add to Cart</button>
+            </div>
+            <div class="finish-card" id="finish-aluminium">
+                <img src="images/1111.jpg" class="finish-img" alt="Aluminium Vastu Strip">
+                <div class="finish-zone">Air element</div>
+                <h3>Aluminium Strip</h3>
+                <p class="finish-desc">Governs Northeast & East zones. Corrects wealth leakage, blocks and improves concentration and mental space harmony.</p>
+                <div class="finish-price">₹2,499 <span style="font-size:0.75rem; color:var(--clr-text-muted);">/ Pack of 3</span></div>
+                <button class="btn-add-cart" onclick="addToCart('alu-strip-10')"><i class="ph ph-shopping-cart"></i> Add to Cart</button>
+            </div>
+            <div class="finish-card" id="finish-copper">
+                <img src="images/11.jpg" class="finish-img" alt="Copper Vastu Strip">
+                <div class="finish-zone">Fire element</div>
+                <h3>Copper Vastu Strip</h3>
+                <p class="finish-desc">Governs Southeast & South zones. Corrects entrance faults, stabilizes fire energy cuts, and balances cooking block lines.</p>
+                <div class="finish-price">₹1,499 <span style="font-size:0.75rem; color:var(--clr-text-muted);">/ 8ft</span></div>
+                <button class="btn-add-cart" onclick="addToCart('copper-strip-8')"><i class="ph ph-shopping-cart"></i> Add to Cart</button>
+            </div>
+            <div class="finish-card" id="finish-steel">
+                <img src="images/111111.jpg" class="finish-img" alt="Stainless Steel Vastu Strip">
+                <div class="finish-zone">Space element</div>
+                <h3>Stainless Steel Strip</h3>
+                <p class="finish-desc">Governs West & Northwest zones. Balances northwest entries, toilet locations, and segments room energy boundaries.</p>
+                <div class="finish-price">₹1,999 <span style="font-size:0.75rem; color:var(--clr-text-muted);">/ 10.2ft</span></div>
+                <button class="btn-add-cart" onclick="addToCart('ss-strip-10')"><i class="ph ph-shopping-cart"></i> Add to Cart</button>
+            </div>
+            <div class="finish-card" id="finish-iron">
+                <img src="images/11111.jpg" class="finish-img" alt="Iron Vastu Strip">
+                <div class="finish-zone">Saturn / Space</div>
+                <h3>Iron Vastu Strip</h3>
+                <p class="finish-desc">Governs West & Northwest sectors. Ideal for high density structural anchors and stabilizing commercial ground boundaries.</p>
+                <div class="finish-price">₹1,199 <span style="font-size:0.75rem; color:var(--clr-text-muted);">/ 10.2ft</span></div>
+                <button class="btn-add-cart" onclick="addToCart('iron-strip-10')"><i class="ph ph-shopping-cart"></i> Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- White Labelling Section -->
+    <section class="white-label-section">
+        <div class="white-label-container">
+            <div class="white-label-info">
+                <span class="white-label-badge">Limited Time Offer</span>
+                <h2>Purchase Strips of <span>₹10,100</span><br>and Get <span>Free Custom White Labelling*</span></h2>
+                <p style="color: var(--text-muted); font-size: 1.02rem; line-height: 1.7;">
+                    Elevate your professional consultant status or builder business. We supply the high-grade elements, packaged under <strong style="color:#FFFFFF;">your own brand name</strong>!
+                </p>
+                <ul class="white-label-bullets">
+                    <li><i class="ph ph-trend-up"></i> <strong>Promote Your Brand:</strong> Build authority, reputation, and continuous client trust.</li>
+                    <li><i class="ph ph-box"></i> <strong>Your Brand, Our Packaging:</strong> Custom printed logos and contacts direct on strips boxes.</li>
+                    <li><i class="ph ph-percent"></i> <strong>100% Free Service:</strong> Zero die-cutting, plates or extra custom printing charges.</li>
+                </ul>
+                <div class="mockup-row">
+                    <div class="mockup-box">
+                        <img src="images/logo.png" alt="Agniyantra Logo" class="logo-light">
+                        <div class="mockup-brand">Agniyantra</div>
+                        <div class="mockup-product">Metal Strips</div>
+                    </div>
+                    <div class="mockup-arrow" style="font-size:1.3rem; color:var(--warm-bronze); font-weight:700;"><i class="ph ph-arrow-right"></i></div>
+                    <div class="mockup-box box-custom">
+                        <div class="mockup-placeholder" id="boxCustomName">YOUR LOGO</div>
+                        <div class="mockup-divider"></div>
+                        <div class="mockup-sub" id="boxCustomSub">YOUR NAME</div>
+                        <div class="mockup-sub" id="boxCustomPhone">PHONE NO</div>
+                    </div>
+                </div>
+            </div>
+            <div style="position:relative;">
+                <div class="calculator-widget">
+                    <div class="calc-header">
+                        <h3>White Labelling Bundle Builder</h3>
+                        <span>Target: ₹10,100</span>
+                    </div>
+                    <div class="calc-row">
+                        <div class="calc-product-info">
+                            <img src="images/111.jpg" class="calc-product-img" alt="Brass">
+                            <div>
+                                <div class="calc-product-title">Brass Strips (10.2ft)</div>
+                                <div class="calc-product-price">₹2,299 / unit</div>
+                            </div>
+                        </div>
+                        <div class="calc-qty-control">
+                            <button class="calc-qty-btn" onclick="updateCalcQty('brass', -1)">-</button>
+                            <input type="number" id="calc-qty-brass" class="calc-qty-input" value="0" min="0" onchange="recalculateBundle()">
+                            <button class="calc-qty-btn" onclick="updateCalcQty('brass', 1)">+</button>
+                        </div>
+                        <div class="calc-row-total" id="calc-total-brass">₹0</div>
+                    </div>
+                    <div class="calc-row">
+                        <div class="calc-product-info">
+                            <img src="images/11.jpg" class="calc-product-img" alt="Copper">
+                            <div>
+                                <div class="calc-product-title">Copper Strips (8ft)</div>
+                                <div class="calc-product-price">₹1,499 / unit</div>
+                            </div>
+                        </div>
+                        <div class="calc-qty-control">
+                            <button class="calc-qty-btn" onclick="updateCalcQty('copper', -1)">-</button>
+                            <input type="number" id="calc-qty-copper" class="calc-qty-input" value="0" min="0" onchange="recalculateBundle()">
+                            <button class="calc-qty-btn" onclick="updateCalcQty('copper', 1)">+</button>
+                        </div>
+                        <div class="calc-row-total" id="calc-total-copper">₹0</div>
+                    </div>
+                    <div class="calc-row">
+                        <div class="calc-product-info">
+                            <img src="images/111111.jpg" class="calc-product-img" alt="Steel">
+                            <div>
+                                <div class="calc-product-title">Steel Strips (10.2ft)</div>
+                                <div class="calc-product-price">₹1,999 / unit</div>
+                            </div>
+                        </div>
+                        <div class="calc-qty-control">
+                            <button class="calc-qty-btn" onclick="updateCalcQty('steel', -1)">-</button>
+                            <input type="number" id="calc-qty-steel" class="calc-qty-input" value="0" min="0" onchange="recalculateBundle()">
+                            <button class="calc-qty-btn" onclick="updateCalcQty('steel', 1)">+</button>
+                        </div>
+                        <div class="calc-row-total" id="calc-total-steel">₹0</div>
+                    </div>
+                    <div class="calc-row">
+                        <div class="calc-product-info">
+                            <img src="images/1111.jpg" class="calc-product-img" alt="Aluminium">
+                            <div>
+                                <div class="calc-product-title">Aluminium Strips (Pack of 3)</div>
+                                <div class="calc-product-price">₹2,499 / unit</div>
+                            </div>
+                        </div>
+                        <div class="calc-qty-control">
+                            <button class="calc-qty-btn" onclick="updateCalcQty('aluminium', -1)">-</button>
+                            <input type="number" id="calc-qty-aluminium" class="calc-qty-input" value="0" min="0" onchange="recalculateBundle()">
+                            <button class="calc-qty-btn" onclick="updateCalcQty('aluminium', 1)">+</button>
+                        </div>
+                        <div class="calc-row-total" id="calc-total-aluminium">₹0</div>
+                    </div>
+                    <div class="calc-row">
+                        <div class="calc-product-info">
+                            <img src="images/11111.jpg" class="calc-product-img" alt="Iron">
+                            <div>
+                                <div class="calc-product-title">Iron Strips (10.2ft)</div>
+                                <div class="calc-product-price">₹1,199 / unit</div>
+                            </div>
+                        </div>
+                        <div class="calc-qty-control">
+                            <button class="calc-qty-btn" onclick="updateCalcQty('iron', -1)">-</button>
+                            <input type="number" id="calc-qty-iron" class="calc-qty-input" value="0" min="0" onchange="recalculateBundle()">
+                            <button class="calc-qty-btn" onclick="updateCalcQty('iron', 1)">+</button>
+                        </div>
+                        <div class="calc-row-total" id="calc-total-iron">₹0</div>
+                    </div>
+                    <div class="calc-brand-inputs">
+                        <span>Set Custom Box Layout Details</span>
+                        <div class="input-row">
+                            <input type="text" id="customInputLogo" placeholder="Your Brand Name" oninput="updateMockupText()">
+                            <input type="text" id="customInputName" placeholder="Your Name" oninput="updateMockupText()">
+                        </div>
+                        <input type="text" id="customInputPhone" placeholder="Your Phone Number" oninput="updateMockupText()">
+                    </div>
+                    <div class="calc-progress">
+                        <div class="calc-progress-label">
+                            <span>Labelling Progress</span>
+                            <span id="calc-progress-val">0%</span>
+                        </div>
+                        <div class="calc-progress-bar">
+                            <div class="calc-progress-fill" id="calc-progress-fill"></div>
+                        </div>
+                        <div class="calc-unlock-msg" id="calc-unlock-msg">
+                            <i class="ph ph-lock"></i> Purchase ₹10,100 more to unlock Free White Labelling.
+                        </div>
+                    </div>
+                    <div class="calc-footer">
+                        <div>
+                            <div class="calc-subtotal-label">Subtotal:</div>
+                            <div class="calc-subtotal-val" id="calc-subtotal">₹0</div>
+                        </div>
+                        <button class="btn btn-primary" id="calc-submit-btn" disabled onclick="addBundleToCart()" style="padding:0.75rem 1.5rem; font-size:0.75rem;">
+                            Add Bundle to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Perfect For Section -->
+    <section class="perfect-section">
+        <div class="section-header">
+            <h2>Perfect for Architectural Correction</h2>
+            <p>Our pure elements help correct directional flaws in various sectors with high efficacy.</p>
+        </div>
+        <div class="perfect-grid">
+            <div class="perfect-card">
+                <div class="perfect-icon-box"><i class="ph ph-house-line"></i></div>
+                <h3>Vastu Corrections</h3>
+                <p>Balances cuts, extensions, toilet entries, and structural elements without breaking tiles.</p>
+            </div>
+            <div class="perfect-card">
+                <div class="perfect-icon-box"><i class="ph ph-buildings"></i></div>
+                <h3>Homes & Offices</h3>
+                <p>Neutralizes negative directional frequencies in commercial spaces and residential properties.</p>
+            </div>
+            <div class="perfect-card">
+                <div class="perfect-icon-box"><i class="ph ph-paint-brush-broad"></i></div>
+                <h3>Builders & Interiors</h3>
+                <p>Embeds easily under door thresholds or floor tiles during early stage layout renovations.</p>
+            </div>
+            <div class="perfect-card">
+                <div class="perfect-icon-box"><i class="ph ph-activity"></i></div>
+                <h3>Energy Balancing</h3>
+                <p>Increases positive vibrations, restoring element flow for physical and mental clarity.</p>
+            </div>
+            <div class="perfect-card">
+                <div class="perfect-icon-box"><i class="ph ph-sparkles"></i></div>
+                <h3>Positive Vibration</h3>
+                <p>Maintains steady cosmic harmony to support peace, abundance, and domestic health.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ + Sticky Note -->
+    <section class="faq-sticky-section">
+        <div>
+            <div class="section-header" style="text-align:left; margin-bottom:1.5rem;">
+                <h2 style="padding-bottom:0.5rem;">Vastu Strips FAQs</h2>
+                <p style="margin:0; max-width:100%;">Frequently asked questions regarding metal strips implementation.</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How are Vastu Metal Strips installed?
+                        <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Vastu strips are typically installed by cutting a slot (about 2 inches deep and 1.5mm wide) in the flooring tiles/gaps. Insert the metal strip inside, seal it with adhesive/grout, and level it. It acts as an elemental cut-off line.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Which metal strip should I choose for Southwest corrections?
+                        <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Southwest (Nairutya) represents the Earth element. For Southwest entries or toilet corrections, a heavy Solid Brass Strip or Lead Stud is strictly recommended to stabilize the earth boundary.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Does Agniyantra supply lab certificates?
+                        <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Yes. Every batch of copper, brass, stainless steel, and aluminium is certified pure (>99.6%) by government-approved laboratories. Purity is critical for effective energy frequency balancing.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sticky-note-wrap">
+            <div class="sticky-note">
+                <h4>PROMO NOTES</h4>
+                <ul>
+                    <li>Offer valid on minimum purchase of Rs 10,100.</li>
+                    <li>White labelling applicable only on strips boxes.</li>
+                    <li>Design approval required before printing.</li>
+                    <li>No extra charges for custom white labelling.</li>
+                    <li>Offer valid for a limited period only.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Helpline Bar -->
+    <section class="helpline-bar">
+        <div class="helpline-container">
+            <div class="helpline-item">
+                <i class="ph ph-phone-call"></i>
+                <span>Helpline: <a href="tel:+919654666603">+91 9654666603</a></span>
+            </div>
+            <div class="helpline-item">
+                <i class="ph ph-globe"></i>
+                <span>Website: <a href="https://agniyantra.in" target="_blank">agniyantra.in</a></span>
+            </div>
+            <div class="helpline-item">
+                <i class="ph ph-envelope-simple"></i>
+                <span>Email: <a href="mailto:agniyantraics@gmail.com">agniyantraics@gmail.com</a></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="../../index.html" class="logo"><img src="images/logo.png" alt="Agniyantra Logo" class="logo-img logo-light"></a>
+                <p>We provide authentic, certified, and spiritually energized Vastu remedies to restore architectural energy balances across your home and offices.</p>
+                <div class="social-row">
+                    <button title="Facebook"><i class="ph ph-facebook-logo"></i></button>
+                    <button title="Instagram"><i class="ph ph-instagram-logo"></i></button>
+                    <button title="YouTube"><i class="ph ph-youtube-logo"></i></button>
+                </div>
+            </div>
+            <div>
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../shop.html">Shop remedies</a></li>
+                    <li><a href="landing.html">Strips remedies</a></li>
+                    <li><a href="../../about.html">About story</a></li>
+                    <li><a href="../../contact.html">Contact expert</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">Vastu Remedies</h4>
+                <ul class="footer-links">
+                    <li><a href="../../shop.html?category=strips">Copper & Brass Strips</a></li>
+                    <li><a href="../../shop.html?category=studs">Solid Energy Studs</a></li>
+                    <li><a href="../../shop.html?category=idols">Sacred Helixes</a></li>
+                    <li><a href="../../shop.html?category=combo">Vastu Combo Packs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">Support & Trust</h4>
+                <ul class="footer-links">
+                    <li><a href="../../about.html">Purity Certificates</a></li>
+                    <li><a href="../../contact.html">Expert Consulting</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Agniyantra Ltd. All rights reserved.</p>
+            <p>Designed for Ultimate Architectural Harmony</p>
+        </div>
+    </footer>
+
+    <!-- Cart Drawer -->
+    <div class="cart-drawer-overlay">
+        <div class="cart-drawer">
+            <div class="cart-drawer-header">
+                <h3>Shopping Cart (<span class="cart-count">0</span>)</h3>
+                <button class="close-drawer-btn" onclick="closeCartDrawer()" aria-label="Close Cart"><i class="ph ph-x"></i></button>
+            </div>
+            <div class="shipping-progress-container">
+                <div class="shipping-message">Add Vastu remedies to get FREE delivery nationwide!</div>
+                <div class="shipping-progress-bar">
+                    <div class="shipping-progress-fill"></div>
+                </div>
+            </div>
+            <div class="cart-drawer-items"></div>
+            <div class="cart-drawer-footer">
+                <div class="drawer-subtotal-row">
+                    <span>Subtotal:</span>
+                    <span class="drawer-subtotal-val">₹0.00</span>
+                </div>
+                <div class="drawer-checkout-btns">
+                    <a href="../../cart.html" class="btn btn-outline" style="width:100%;">View Full Cart</a>
+                    <a href="../../cart.html" class="btn btn-primary" style="width:100%;">Proceed To Checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast-container"></div>
+
+    <a href="https://wa.me/919654666603" target="_blank" class="whatsapp-badge" aria-label="Chat on WhatsApp" title="WhatsApp Support">
+        <i class="ph ph-whatsapp-logo"></i>
+    </a>
+
+    <script src="script.js"></script>
+    <script src="../../assets/js/chatbot.js"></script>
+</body>
+</html>
+

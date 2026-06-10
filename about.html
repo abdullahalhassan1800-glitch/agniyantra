@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Our Certified Remedies | Agniyantra Premium Vastu</title>
+    <meta name="description" content="Discover the ancient elemental Vastu science and government lab certification guidelines that shape Agniyantra store.">
+    
+    <!-- Unified CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/chatbot.css">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <style>
+        .about-section {
+            max-width: 1200px;
+            margin: 5rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+        
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--clr-gold-dark);
+            font-weight: 500;
+        }
+        
+        .about-text p {
+            font-size: 1.05rem;
+            color: var(--clr-text-muted);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+        
+        .about-image img {
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-premium);
+            border: 1px solid var(--clr-border);
+        }
+
+        .timeline-section {
+            background-color: var(--clr-bg-card);
+            border-top: 1px solid var(--clr-border);
+            border-bottom: 1px solid var(--clr-border);
+            padding: 8rem 2rem;
+        }
+
+        .timeline-grid {
+            max-width: 1200px;
+            margin: 4rem auto 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+        }
+
+        .timeline-item {
+            border-left: 3px solid var(--clr-gold);
+            padding-left: 1.5rem;
+        }
+
+        .timeline-item h4 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: var(--clr-text-dark);
+        }
+
+        .timeline-item p {
+            color: var(--clr-text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .about-section { grid-template-columns: 1fr; gap: 3rem; }
+            .timeline-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Promo Bar -->
+    <div class="top-bar">
+        <div><i class="ph ph-sparkle"></i> Free Shipping on Vastu Remedies Above ₹5,000</div>
+        <div><i class="ph ph-phone"></i> Helpline: +91 9654666603 &nbsp;|&nbsp; <a href="contact.html">Support</a></div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header id="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="logo.png" alt="Agniyantra Logo" class="logo-img"></a>
+            
+            <button class="nav-toggle" onclick="toggleNav()" aria-label="Menu">
+                <i class="ph ph-list"></i>
+            </button>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="pages/landing/landing.html">Strips</a>
+                <a href="studs.html">Studs</a>
+                <a href="about.html" class="active">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="nav-overlay" onclick="toggleNav()"></div>
+            
+            <div class="nav-actions">
+                <button class="icon-btn" aria-label="Search" onclick="showToast('Search overlay is opening...')" title="Search">
+                    <i class="ph ph-magnifying-glass"></i>
+                </button>
+                <button class="icon-btn" aria-label="Account" onclick="showToast('Login panel is loading...')" title="Account">
+                    <i class="ph ph-user"></i>
+                </button>
+                <button class="icon-btn" aria-label="Wishlist" onclick="showToast('Loading your Vastu Wishlist...')" title="Wishlist">
+                    <i class="ph ph-heart"></i>
+                </button>
+                <button class="icon-btn" aria-label="Cart" onclick="openCartDrawer()" title="Open Cart">
+                    <i class="ph ph-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <div class="page-banner">
+        <h1>About Agniyantra</h1>
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> <span>/</span> <span style="color: var(--clr-gold-dark);">Our Story</span>
+        </div>
+    </div>
+
+    <!-- About Main Content -->
+    <main class="about-section">
+        <div class="about-image">
+            <img src="New/img2/Regal brass sculpture.png" alt="Agniyantra Vastu Collection">
+        </div>
+        <div class="about-text">
+            <h2>Our Story & Vision</h2>
+            <p>Welcome to Agniyantra, the premier destination for authentic and highly effective Vastu remedies. Our journey began with a simple yet profound goal: to bring the ancient science of architecture and energy flow into modern homes seamlessly.</p>
+            <p>We understand that the spaces we inhabit deeply influence our physical, mental, and financial well-being. That's why every product in our catalog, from our signature stainless steel strips to our carefully crafted energy studs, is manufactured under strict quality controls and Vastu compliance guidelines.</p>
+            <p>At Agniyantra, we are not just selling products; we are offering pathways to harmony, prosperity, and peace. We work closely with renowned Vastu experts to ensure that our remedies are powerful, precise, and practical for contemporary living.</p>
+        </div>
+    </main>
+
+    <!-- Metal Purity Certifications and Timeline Section -->
+    <section class="timeline-section">
+        <div class="section-header">
+            <h2>Lab Certified & Consecrated</h2>
+            <p>To assure perfect cosmic vibrations, every piece of metal undergoes strict chemical spectrum checks and planetary shanti pujas before packaging.</p>
+        </div>
+
+        <div class="timeline-grid">
+            <div class="timeline-item">
+                <h4>99.6%+ Elemental Purity</h4>
+                <p>Spectrometer analysis confirms high purity for red copper and brass castings. We guarantee zero chemical dilutes or heavy alloy fillers.</p>
+            </div>
+            <div class="timeline-item">
+                <h4>Vastu Shastra Dimensions</h4>
+                <p>All dimensions (gauge density, width, weights) strictly follow classical shastra rules to ensure proper earth energy alignment.</p>
+            </div>
+            <div class="timeline-item">
+                <h4>Planetary Pujas Consecration</h4>
+                <p>Every single remedial item undergoes purifying Vedic rituals conducted by seasoned Sanskrit scholars to dissolve mine residues.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experts panel showcase -->
+    <section class="section">
+        <div class="section-header">
+            <h2>Leading Consultants Panel</h2>
+            <p>Our Vastu corrections are guided and endorsed by recognized masters of classical Vedic astrology.</p>
+        </div>
+
+        <div class="experts-showcase">
+            <div class="experts-grid">
+                <div class="expert-card-profile">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop" class="expert-avatar" alt="Dr. Aravind Shastri">
+                    <div class="expert-details">
+                        <h4>Dr. Aravind Shastri</h4>
+                        <div class="expert-title-sub">Chief Vastu Acharya</div>
+                        <p class="expert-bio">With over 24 years of classical Vastu Shastra consultation, Dr. Shastri guides the precise elemental weight and dimensions of our metal remedies.</p>
+                    </div>
+                </div>
+
+                <div class="expert-card-profile">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop" class="expert-avatar" alt="Acharya Devendra Ji">
+                    <div class="expert-details">
+                        <h4>Acharya Devendra Ji</h4>
+                        <div class="expert-title-sub">Vastu energy expert</div>
+                        <p class="expert-bio">Specializing in geopathic stress grids and metal corrections without demolition, he tests the energy fields of all our prototypes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Architecture -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo"><img src="logo.png" alt="Agniyantra Logo" class="logo-img logo-light"></a>
+                <p>We provide authentic, certified, and spiritually energized Vastu remedies to restore architectural energy balances across your home and offices.</p>
+                <div class="footer-social">
+                    <button class="action-btn" title="Facebook"><i class="ph ph-facebook-logo"></i></button>
+                    <button class="action-btn" title="Instagram"><i class="ph ph-instagram-logo"></i></button>
+                    <button class="action-btn" title="YouTube"><i class="ph ph-youtube-logo"></i></button>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop remedies</a></li>
+                    <li><a href="about.html">About story</a></li>
+                    <li><a href="contact.html">Contact expert</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Vastu Remedies</h4>
+                <ul class="footer-links">
+                    <li><a href="shop.html?category=strips">Copper & Brass Strips</a></li>
+                    <li><a href="shop.html?category=studs">Solid Energy Studs</a></li>
+                    <li><a href="shop.html?category=idols">Sacred Helixes</a></li>
+                    <li><a href="shop.html?category=combo">Vastu Combo Packs</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Support & Trust</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">Purity Certificates</a></li>
+                    <li><a href="contact.html">Expert Consulting</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Agniyantra Ltd. All rights reserved.</p>
+            <p>Designed for Ultimate Architectural Harmony</p>
+        </div>
+    </footer>
+
+    <!-- DYNAMIC GLASSMORPHIC SLIDE-OUT CART DRAWER OVERLAY -->
+    <div class="cart-drawer-overlay">
+        <div class="cart-drawer">
+            <div class="cart-drawer-header">
+                <h3>Shopping Cart (<span class="cart-count">0</span>)</h3>
+                <button class="close-drawer-btn" onclick="closeCartDrawer()" aria-label="Close Cart"><i class="ph ph-x"></i></button>
+            </div>
+            
+            <div class="shipping-progress-container">
+                <div class="shipping-message">Add Vastu remedies to get FREE delivery nationwide!</div>
+                <div class="shipping-progress-bar">
+                    <div class="shipping-progress-fill"></div>
+                </div>
+            </div>
+            
+            <div class="cart-drawer-items">
+                <!-- Dynamically injected by JS -->
+            </div>
+            
+            <div class="cart-drawer-footer">
+                <div class="drawer-subtotal-row">
+                    <span>Subtotal:</span>
+                    <span class="drawer-subtotal-val">₹0.00</span>
+                </div>
+                <div class="drawer-checkout-btns">
+                    <a href="cart.html" class="btn btn-outline" style="width: 100%;">View Full Cart</a>
+                    <a href="cart.html" class="btn btn-primary" style="width: 100%;">Proceed To Checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Global Toast notifications container -->
+    <div class="toast-container"></div>
+
+    <script src="script.js"></script>
+    <script src="assets/js/chatbot.js"></script>
+</body>
+</html>

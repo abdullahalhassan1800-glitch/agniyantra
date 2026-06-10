@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agniyantra Store | Premium Certified Vastu Remedies</title>
+    <meta name="description" content="Shop premium Vedic-energized Vastu strips, solid energy studs, and helix remedies at Agniyantra. Government-certified pure metals for floor correction.">
+    
+    <!-- Unified CSS Design System -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/chatbot.css">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <!-- Top Promo Bar -->
+    <div class="top-bar">
+        <div><i class="ph ph-sparkle"></i> Free Shipping on Vastu Remedies Above ₹5,000</div>
+        <div><i class="ph ph-phone"></i> Helpline: +91 9654666603 &nbsp;|&nbsp; <a href="contact.html">Support</a></div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header id="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="logo.png" alt="Agniyantra Logo" class="logo-img"></a>
+            
+            <button class="nav-toggle" onclick="toggleNav()" aria-label="Menu">
+                <i class="ph ph-list"></i>
+            </button>
+            
+            <nav class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="pages/landing/landing.html">Strips</a>
+                <a href="studs.html">Studs</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            
+            <div class="nav-overlay" onclick="toggleNav()"></div>
+            
+            <div class="nav-actions">
+                <button class="icon-btn" aria-label="Search" onclick="showToast('Search overlay is opening...')" title="Search">
+                    <i class="ph ph-magnifying-glass"></i>
+                </button>
+                <button class="icon-btn" aria-label="Account" onclick="showToast('Login panel is loading...')" title="Account">
+                    <i class="ph ph-user"></i>
+                </button>
+                <button class="icon-btn" aria-label="Wishlist" onclick="showToast('Loading your Vastu Wishlist...')" title="Wishlist">
+                    <i class="ph ph-heart"></i>
+                </button>
+                <button class="icon-btn" aria-label="Cart" onclick="openCartDrawer()" title="Open Cart">
+                    <i class="ph ph-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Celestial Immersive Hero Slideshow Section -->
+    <section class="hero-carousel">
+        <div class="hero-slides-container">
+            <!-- Slide 1 -->
+            <div class="hero-slide active">
+                <a href="shop.html" class="hero-slide-link">
+                    <img src="New/1.png" alt="Banner 1">
+                </a>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="hero-slide">
+                <a href="shop.html" class="hero-slide-link">
+                    <img src="New/2.png" alt="Banner 2">
+                </a>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="hero-slide">
+                <a href="shop.html" class="hero-slide-link">
+                    <img src="New/3.png" alt="Banner 3">
+                </a>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="hero-slide">
+                <a href="shop.html" class="hero-slide-link">
+                    <img src="New/4.png" alt="Banner 4">
+                </a>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="hero-slide">
+                <a href="shop.html" class="hero-slide-link">
+                    <img src="New/5.png" alt="Banner 5">
+                </a>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="hero-slide">
+                <a href="shop.html" class="hero-slide-link">
+                    <img src="New/6.png" alt="Banner 6">
+                </a>
+            </div>
+        </div>
+        
+        <!-- Slideshow Controls -->
+        <button class="hero-carousel-btn prev" aria-label="Previous Slide" style="color: #8C4B1B; border-color: rgba(140, 75, 27, 0.2); background: rgba(255,255,255,0.7);"><i class="ph ph-caret-left"></i></button>
+        <button class="hero-carousel-btn next" aria-label="Next Slide" style="color: #8C4B1B; border-color: rgba(140, 75, 27, 0.2); background: rgba(255,255,255,0.7);"><i class="ph ph-caret-right"></i></button>
+        
+        <div class="hero-carousel-dots">
+            <span class="hero-carousel-dot active" style="background: rgba(140, 75, 27, 0.3);"></span>
+            <span class="hero-carousel-dot" style="background: rgba(140, 75, 27, 0.3);"></span>
+            <span class="hero-carousel-dot" style="background: rgba(140, 75, 27, 0.3);"></span>
+            <span class="hero-carousel-dot" style="background: rgba(140, 75, 27, 0.3);"></span>
+            <span class="hero-carousel-dot" style="background: rgba(140, 75, 27, 0.3);"></span>
+            <span class="hero-carousel-dot" style="background: rgba(140, 75, 27, 0.3);"></span>
+        </div>
+    </section>
+
+    <!-- Trust Badges & Indicators -->
+    <section class="trust-indicators">
+        <div class="trust-grid">
+            <div class="trust-item">
+                <i class="ph ph-seal-check"></i>
+                <div>
+                    <h4>99.6% Certified Pure</h4>
+                    <p>Rigorous chemical composition testing for brass, copper, and stainless steel.</p>
+                </div>
+            </div>
+            <div class="trust-item">
+                <i class="ph ph-sparkles"></i>
+                <div>
+                    <h4>Vedic Energized</h4>
+                    <p>Activated by Vedic experts using authentic planetary shanti mantras.</p>
+                </div>
+            </div>
+            <div class="trust-item">
+                <i class="ph ph-truck-carrier"></i>
+                <div>
+                    <h4>Secure Express Delivery</h4>
+                    <p>Double-shielded shockproof packaging to preserve energy frequencies.</p>
+                </div>
+            </div>
+            <div class="trust-item">
+                <i class="ph ph-chats"></i>
+                <div>
+                    <h4>Acharya Endorsed</h4>
+                    <p>Vastu remedies trusted and highly recommended by leading consultants.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="section" id="categories">
+        <div class="section-header">
+            <h2>Remedies by Elemental Zone</h2>
+            <p>Select carefully crafted Vastu products designed to balance specific directions and floor zones.</p>
+        </div>
+
+        <div class="categories-grid">
+            <!-- Vastu Strips -->
+            <div class="category-card" onclick="window.location.href='shop.html?category=strips'">
+                <img src="https://agniyantra.in/wp-content/uploads/2025/12/BRASS-STRIPES-pack-of-2-1.png" alt="Vastu Strips">
+                <div class="category-overlay">
+                    <h3>Vastu Strips</h3>
+                    <div class="category-link">Shop Elemental Strips <i class="ph ph-arrow-right"></i></div>
+                </div>
+            </div>
+            <!-- Vastu Studs -->
+            <div class="category-card" onclick="window.location.href='shop.html?category=studs'">
+                <img src="https://agniyantra.in/wp-content/uploads/2025/12/SMALL-2-1.webp" alt="Vastu Studs">
+                <div class="category-overlay">
+                    <h3>Energy Studs</h3>
+                    <div class="category-link">Shop Solid Studs <i class="ph ph-arrow-right"></i></div>
+                </div>
+            </div>
+            <!-- Sacred Idols & Helixes -->
+            <div class="category-card" onclick="window.location.href='shop.html?category=idols'">
+                <img src="https://agniyantra.in/wp-content/uploads/2025/12/15.png" alt="Sacred Idols">
+                <div class="category-overlay">
+                    <h3>Sacred Helixes</h3>
+                    <div class="category-link">Shop Cosmic Helixes <i class="ph ph-arrow-right"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Video Carousel Section -->
+    <section class="video-carousel-section">
+        <div class="video-slides-container">
+            <!-- Slide 1 -->
+            <div class="video-slide active" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('New/img2/Golden bull.png') center/cover no-repeat;">
+                <div class="video-slide-overlay">
+                    <div class="video-slide-content">
+                        <div class="video-slide-subtitle">Sacred Nandi</div>
+                        <h2>Divine Golden Bull</h2>
+                        <p>Bring strength, stability and prosperity into your space with our handcrafted golden bull — a powerful Vastu symbol of protection and abundance.</p>
+                        <a href="shop.html" class="btn btn-primary">Explore Collection</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="video-slide" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('New/img2/Gleaming gold camel.png') center/cover no-repeat;">
+                <div class="video-slide-overlay">
+                    <div class="video-slide-content">
+                        <div class="video-slide-subtitle">Luxury Vastu</div>
+                        <h2>Gleaming Gold Camel</h2>
+                        <p>Symbolising endurance, wealth and graceful travel — this golden camel adds a regal touch while attracting success and positive energy to your home.</p>
+                        <a href="shop.html" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="video-slide" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('New/img2/Elegant gold accents.png') center/cover no-repeat;">
+                <div class="video-slide-overlay">
+                    <div class="video-slide-content">
+                        <div class="video-slide-subtitle">Premium Decor</div>
+                        <h2>Elegant Gold Accents</h2>
+                        <p>Elevate your interiors with exquisite gold-toned accents — meticulously designed to bring warmth, richness and harmonious energy to every corner.</p>
+                        <a href="shop.html" class="btn btn-primary">Browse Decor</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 4 -->
+            <div class="video-slide" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('New/img2/Colorful tape rolls.png') center/cover no-repeat;">
+                <div class="video-slide-overlay">
+                    <div class="video-slide-content">
+                        <div class="video-slide-subtitle">Vibrant Energy</div>
+                        <h2>Colorful Tape Rolls</h2>
+                        <p>Add a splash of colour and positive vibration to your space with these beautifully crafted tape rolls — perfect for creative Vastu enhancements.</p>
+                        <a href="shop.html" class="btn btn-primary">Discover More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 5 -->
+            <div class="video-slide" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('New/img2/Elegant gemstone jar.png') center/cover no-repeat;">
+                <div class="video-slide-overlay">
+                    <div class="video-slide-content">
+                        <div class="video-slide-subtitle">Gemstone Energy</div>
+                        <h2>Elegant Gemstone Jar</h2>
+                        <p>Harness the natural power of premium gemstones — this elegant jar radiates positive energy and serves as a stunning centrepiece for your home.</p>
+                        <a href="shop.html" class="btn btn-primary">Explore Gems</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 6 -->
+            <div class="video-slide" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('New/img2/Elegant keychains.png') center/cover no-repeat;">
+                <div class="video-slide-overlay">
+                    <div class="video-slide-content">
+                        <div class="video-slide-subtitle">Portable Blessings</div>
+                        <h2>Elegant Keychains</h2>
+                        <p>Carry Vastu energy wherever you go — our elegant keychains combine fine craftsmanship with sacred symbolism for daily protection and style.</p>
+                        <a href="shop.html" class="btn btn-primary">Shop Keychains</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 7 -->
+            <div class="video-slide" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('New/img2/Golden bull statue.png') center/cover no-repeat;">
+                <div class="video-slide-overlay">
+                    <div class="video-slide-content">
+                        <div class="video-slide-subtitle">Majestic Presence</div>
+                        <h2>Golden Bull Statue</h2>
+                        <p>A majestic symbol of power and prosperity — this golden bull statue anchors your space with unwavering strength and divine grace.</p>
+                        <a href="shop.html" class="btn btn-primary">View Statues</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 8 -->
+            <div class="video-slide" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('New/img2/Golden sun face.png') center/cover no-repeat;">
+                <div class="video-slide-overlay">
+                    <div class="video-slide-content">
+                        <div class="video-slide-subtitle">Radiant Energy</div>
+                        <h2>Golden Sun Face</h2>
+                        <p>Invite the life-giving energy of the sun into your home — this radiant sun face symbolises vitality, clarity and endless positive force.</p>
+                        <a href="shop.html" class="btn btn-primary">Get Yours</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 9 -->
+            <div class="video-slide" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('New/img2/Golden turtle.png') center/cover no-repeat;">
+                <div class="video-slide-overlay">
+                    <div class="video-slide-content">
+                        <div class="video-slide-subtitle">Timeless Stability</div>
+                        <h2>Golden Turtle</h2>
+                        <p>The turtle symbolises longevity, stability and prosperity — place this golden turtle in your home to nurture enduring good fortune and peace.</p>
+                        <a href="shop.html" class="btn btn-primary">Shop Decor</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 10 -->
+            <div class="video-slide" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('New/img2/Regal brass sculpture.png') center/cover no-repeat;">
+                <div class="video-slide-overlay">
+                    <div class="video-slide-content">
+                        <div class="video-slide-subtitle">Royal Craftsmanship</div>
+                        <h2>Regal Brass Sculpture</h2>
+                        <p>Handcrafted with precision and care — this regal brass sculpture adds a touch of royal elegance while anchoring your space with grounded energy.</p>
+                        <a href="shop.html" class="btn btn-primary">Explore Brass</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Controls -->
+        <button class="carousel-btn prev" aria-label="Previous Slide"><i class="ph ph-caret-left"></i></button>
+        <button class="carousel-btn next" aria-label="Next Slide"><i class="ph ph-caret-right"></i></button>
+        
+        <div class="carousel-dots">
+            <span class="carousel-dot active"></span>
+            <span class="carousel-dot"></span>
+            <span class="carousel-dot"></span>
+            <span class="carousel-dot"></span>
+            <span class="carousel-dot"></span>
+            <span class="carousel-dot"></span>
+            <span class="carousel-dot"></span>
+            <span class="carousel-dot"></span>
+            <span class="carousel-dot"></span>
+            <span class="carousel-dot"></span>
+        </div>
+        
+        <button class="carousel-play-btn" aria-label="Play or Pause Carousel"><i class="ph ph-pause"></i></button>
+    </section>
+
+    <!-- Best Sellers Products Section -->
+    <section class="section bg-secondary">
+        <div class="section-header">
+            <h2>Bestseller Vastu Corrections</h2>
+            <p>Our gold-standard remedies chosen by hundreds of Vastu consultants across the country.</p>
+        </div>
+
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-badge">-55%</div>
+                <div class="product-image-container">
+                    <img src="https://agniyantra.in/wp-content/uploads/2025/12/3-2.webp" alt="Stainless Steel Strip">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Add to Wishlist" onclick="showToast('Added to Wishlist')"><i class="ph ph-heart"></i></button>
+                        <button class="action-btn" title="Quick View" onclick="openQuickView('ss-strip-10')"><i class="ph ph-eye"></i></button>
+                        <button class="action-btn" title="Add to Cart" onclick="addToCart('ss-strip-10')"><i class="ph ph-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Strips</div>
+                    <div class="rating-stars">
+                        <i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i>
+                    </div>
+                    <a href="product.html?id=ss-strip-10" class="product-title">Premium Vastu Stainless Steel Strip 10.2ft</a>
+                    <div class="product-price">₹1,999 <del>₹4,442</del></div>
+                    <button class="btn-add-cart" onclick="addToCart('ss-strip-10')">
+                        <i class="ph ph-shopping-cart"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-badge">-67%</div>
+                <div class="product-image-container">
+                    <img src="https://agniyantra.in/wp-content/uploads/2025/12/BRASS-STRIPES-pack-of-2-1.png" alt="Copper Strip">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Add to Wishlist" onclick="showToast('Added to Wishlist')"><i class="ph ph-heart"></i></button>
+                        <button class="action-btn" title="Quick View" onclick="openQuickView('copper-strip-8')"><i class="ph ph-eye"></i></button>
+                        <button class="action-btn" title="Add to Cart" onclick="addToCart('copper-strip-8')"><i class="ph ph-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Strips</div>
+                    <div class="rating-stars">
+                        <i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i>
+                    </div>
+                    <a href="product.html?id=copper-strip-8" class="product-title">Premium Vastu Copper Strip 8ft</a>
+                    <div class="product-price">₹1,499 <del>₹4,542</del></div>
+                    <button class="btn-add-cart" onclick="addToCart('copper-strip-8')">
+                        <i class="ph ph-shopping-cart"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-badge">-60%</div>
+                <div class="product-image-container">
+                    <img src="https://agniyantra.in/wp-content/uploads/2025/12/SMALL-13.webp" alt="Brass Energy Stud">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Add to Wishlist" onclick="showToast('Added to Wishlist')"><i class="ph ph-heart"></i></button>
+                        <button class="action-btn" title="Quick View" onclick="openQuickView('brass-stud-3')"><i class="ph ph-eye"></i></button>
+                        <button class="action-btn" title="Add to Cart" onclick="addToCart('brass-stud-3')"><i class="ph ph-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Studs</div>
+                    <div class="rating-stars">
+                        <i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-half-fill"></i>
+                    </div>
+                    <a href="product.html?id=brass-stud-3" class="product-title">Vastu Round Solid Brass Energy Stud (3") - Pack of 3</a>
+                    <div class="product-price">₹2,199 <del>₹5,499</del></div>
+                    <button class="btn-add-cart" onclick="addToCart('brass-stud-3')">
+                        <i class="ph ph-shopping-cart"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-badge">-17%</div>
+                <div class="product-image-container">
+                    <img src="https://agniyantra.in/wp-content/uploads/2025/12/SMALL-10.webp" alt="Gold Plated Energy Stud">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Add to Wishlist" onclick="showToast('Added to Wishlist')"><i class="ph ph-heart"></i></button>
+                        <button class="action-btn" title="Quick View" onclick="openQuickView('gold-stud-15')"><i class="ph ph-eye"></i></button>
+                        <button class="action-btn" title="Add to Cart" onclick="addToCart('gold-stud-15')"><i class="ph ph-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Studs</div>
+                    <div class="rating-stars">
+                        <i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i>
+                    </div>
+                    <a href="product.html?id=gold-stud-15" class="product-title">Vastu Brass Gold Plated Energy Stud (1.5") - Pack of 3</a>
+                    <div class="product-price">₹1,499 <del>₹1,806</del></div>
+                    <button class="btn-add-cart" onclick="addToCart('gold-stud-15')">
+                        <i class="ph ph-shopping-cart"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 4.5rem;">
+            <a href="shop.html" class="btn btn-primary">Browse All Remedies</a>
+        </div>
+    </section>
+
+    <!-- Coupons & Active Promos Block -->
+    <section class="offers-section">
+        <div class="section-header">
+            <h2>Exclusive Astrological Offers</h2>
+            <p>Apply our verified promo codes at checkout to unlock active discounts and cosmic gifts.</p>
+        </div>
+        
+        <div class="offers-grid">
+            <!-- Offer 1 -->
+            <div class="offer-card">
+                <span class="offer-badge">Vastu Special</span>
+                <div>
+                    <div class="offer-discount">50% <span>OFF</span></div>
+                    <div class="offer-title">Complete Floor Correction Kit</div>
+                    <div class="offer-desc">Get a premium copper & brass strip bundle set to balance entire floor plans.</div>
+                </div>
+                <div class="offer-footer">
+                    <div class="offer-code-container">
+                        <span class="offer-code">AGNI50</span>
+                        <button class="copy-btn" title="Copy Promo Code" onclick="copyCouponCode('AGNI50', this)">
+                            <i class="ph ph-copy"></i>
+                        </button>
+                        <span class="tooltip">Copy Code</span>
+                    </div>
+                    <div class="offer-timer">
+                        <i class="ph ph-clock"></i>
+                        <span>Expires soon</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Offer 2 -->
+            <div class="offer-card">
+                <span class="offer-badge">Best Value</span>
+                <div>
+                    <div class="offer-discount">₹1,500 <span>OFF</span></div>
+                    <div class="offer-title">Premium Vastu Studs Pack</div>
+                    <div class="offer-desc">Applicable on cart orders above ₹5,000 for solid gold/brass studs.</div>
+                </div>
+                <div class="offer-footer">
+                    <div class="offer-code-container">
+                        <span class="offer-code">STUDS1500</span>
+                        <button class="copy-btn" title="Copy Promo Code" onclick="copyCouponCode('STUDS1500', this)">
+                            <i class="ph ph-copy"></i>
+                        </button>
+                        <span class="tooltip">Copy Code</span>
+                    </div>
+                    <div class="offer-timer">
+                        <i class="ph ph-clock"></i>
+                        <span>Valid This Week</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Offer 3 -->
+            <div class="offer-card">
+                <span class="offer-badge">Free Shipping</span>
+                <div>
+                    <div class="offer-discount">FREE <span>DELIVERY</span></div>
+                    <div class="offer-title">On All Orders Across India</div>
+                    <div class="offer-desc">No minimum cart value required. Secure doorstep delivery in 3-5 business days.</div>
+                </div>
+                <div class="offer-footer">
+                    <div class="offer-code-container">
+                        <span class="offer-code">FREESHIP</span>
+                        <button class="copy-btn" title="Copy Promo Code" onclick="copyCouponCode('FREESHIP', this)">
+                            <i class="ph ph-copy"></i>
+                        </button>
+                        <span class="tooltip">Copy Code</span>
+                    </div>
+                    <div class="offer-timer">
+                        <i class="ph ph-clock"></i>
+                        <span>Limited Period Offer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vastu Experts Showcase Panel & Authenticity Block -->
+    <section class="section bg-secondary">
+        <div class="section-header">
+            <h2>Vastu Purity & Authenticity</h2>
+            <p>Our products go through chemical tests and Vedic rituals so you receive remedies that are spiritually active and elements-rich.</p>
+        </div>
+
+        <div class="experts-showcase">
+            <div class="experts-grid">
+                <!-- Expert Profile -->
+                <div class="expert-card-profile">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop" class="expert-avatar" alt="Dr. Aravind Shastri">
+                    <div class="expert-details">
+                        <h4>Dr. Aravind Shastri</h4>
+                        <div class="expert-title-sub">Chief Vastu Acharya</div>
+                        <p class="expert-bio">With over 24 years of classical Vastu Shastra consultation, Dr. Shastri guides the precise elemental weight and dimensions of our metal remedies.</p>
+                        <button onclick="openConsultingModal()" class="btn btn-outline" style="padding: 0.5rem 1.25rem; font-size: 0.75rem; background: transparent;">Consult Expert</button>
+                    </div>
+                </div>
+
+                <!-- Certified Seal -->
+                <div class="certified-seal-box">
+                    <div class="certified-seal-icon"><i class="ph ph-certificate"></i></div>
+                    <h3>Government Lab Certified</h3>
+                    <p>Every single batch of solid copper and brass is verified by ISO-approved testing labs to guarantee elemental purity exceeding 99.6%. Zero chemical dilutes or alloy weights.</p>
+                    <a href="about.html" class="btn btn-primary">View Purity Certificate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Hot Deals Section -->
+    <section class="section">
+        <div class="section-header">
+            <h2>Trending Cosmic Balancers</h2>
+            <p>Explore this week's highest-demanded directional balances and elemental anchors.</p>
+        </div>
+
+        <div class="products-grid">
+            <!-- Trending Product 1 -->
+            <div class="product-card">
+                <div class="trending-badge">Trending #1</div>
+                <div class="product-badge">-56%</div>
+                <div class="product-image-container">
+                    <img src="https://agniyantra.in/wp-content/uploads/2025/12/BRASS-STRIPES-pack-of-2-1.png" alt="Vastu Multi-Metal Energy Strip Kit">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Add to Wishlist" onclick="showToast('Added to Wishlist')"><i class="ph ph-heart"></i></button>
+                        <button class="action-btn" title="Quick View" onclick="openQuickView('multimetal-kit')"><i class="ph ph-eye"></i></button>
+                        <button class="action-btn" title="Add to Cart" onclick="addToCart('multimetal-kit')"><i class="ph ph-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Combos</div>
+                    <div class="rating-stars">
+                        <i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i>
+                    </div>
+                    <a href="product.html?id=multimetal-kit" class="product-title">Agniyantra Multi-Metal Vastu Energy Strip Kit</a>
+                    <div class="product-price">₹3,499 <del>₹7,999</del></div>
+                    <button class="btn-add-cart" onclick="addToCart('multimetal-kit')">
+                        <i class="ph ph-shopping-cart"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Trending Product 2 -->
+            <div class="product-card">
+                <div class="trending-badge">Hot Deal</div>
+                <div class="product-badge">-60%</div>
+                <div class="product-image-container">
+                    <img src="https://agniyantra.in/wp-content/uploads/2025/12/SMALL-2-1.webp" alt="Vastu Supreme Lead Energy Studs">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Add to Wishlist" onclick="showToast('Added to Wishlist')"><i class="ph ph-heart"></i></button>
+                        <button class="action-btn" title="Quick View" onclick="openQuickView('lead-studs-5')"><i class="ph ph-eye"></i></button>
+                        <button class="action-btn" title="Add to Cart" onclick="addToCart('lead-studs-5')"><i class="ph ph-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Studs</div>
+                    <div class="rating-stars">
+                        <i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-half-fill"></i>
+                    </div>
+                    <a href="product.html?id=lead-studs-5" class="product-title">Vastu Supreme Lead Energy Studs (Pack of 5)</a>
+                    <div class="product-price">₹2,799 <del>₹6,999</del></div>
+                    <button class="btn-add-cart" onclick="addToCart('lead-studs-5')">
+                        <i class="ph ph-shopping-cart"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Trending Product 3 -->
+            <div class="product-card">
+                <div class="trending-badge">Popular</div>
+                <div class="product-badge">-58%</div>
+                <div class="product-image-container">
+                    <img src="https://agniyantra.in/wp-content/uploads/2025/12/15.png" alt="Vastu Pure Zinc Helix">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Add to Wishlist" onclick="showToast('Added to Wishlist')"><i class="ph ph-heart"></i></button>
+                        <button class="action-btn" title="Quick View" onclick="openQuickView('zinc-helix')"><i class="ph ph-eye"></i></button>
+                        <button class="action-btn" title="Add to Cart" onclick="addToCart('zinc-helix')"><i class="ph ph-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Idols / Helix</div>
+                    <div class="rating-stars">
+                        <i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star"></i>
+                    </div>
+                    <a href="product.html?id=zinc-helix" class="product-title">Vastu Pure Zinc Helix for North-East Correction</a>
+                    <div class="product-price">₹1,899 <del>₹4,500</del></div>
+                    <button class="btn-add-cart" onclick="addToCart('zinc-helix')">
+                        <i class="ph ph-shopping-cart"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Trending Product 4 -->
+            <div class="product-card">
+                <div class="trending-badge">Low Stock</div>
+                <div class="product-badge">-60%</div>
+                <div class="product-image-container">
+                    <img src="https://agniyantra.in/wp-content/uploads/2025/12/SMALL-10.webp" alt="Vastu Copper Pyramid Chip Set">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Add to Wishlist" onclick="showToast('Added to Wishlist')"><i class="ph ph-heart"></i></button>
+                        <button class="action-btn" title="Quick View" onclick="openQuickView('pyramid-chip')"><i class="ph ph-eye"></i></button>
+                        <button class="action-btn" title="Add to Cart" onclick="addToCart('pyramid-chip')"><i class="ph ph-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Helix / Crystals</div>
+                    <div class="rating-stars">
+                        <i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i>
+                    </div>
+                    <a href="product.html?id=pyramid-chip" class="product-title">Premium Vastu Copper Pyramid Chip Set</a>
+                    <div class="product-price">₹1,299 <del>₹3,249</del></div>
+                    <button class="btn-add-cart" onclick="addToCart('pyramid-chip')">
+                        <i class="ph ph-shopping-cart"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accordion Vastu FAQs Section -->
+    <section class="faq-section" id="faq">
+        <div class="section-header">
+            <h2>Frequently Asked Vastu Queries</h2>
+            <p>Browse expert solutions to common questions regarding elemental corrections and installations.</p>
+        </div>
+
+        <div class="faq-list">
+            <!-- FAQ 1 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    What is Vastu element floor correction without demolition?
+                    <i class="ph ph-caret-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        Vastu floor correction is a modern elemental balancing technique where specific metal strips (like copper for Fire, brass for Earth) are installed inside flooring gaps or slots. This cuts negative architectural frequencies and corrects entrance, kitchen, or toilet doshas without breaking walls or structural demolition.
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 2 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    Which metal should I choose for correcting Southwest entrance issues?
+                    <i class="ph ph-caret-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        The Southwest direction is governed by the Earth element (Nairutya). For southwest toilet or entrance corrections, highly dense and stable metals like **pure heavy Solid Brass or Lead** are strictly recommended. These act as high-frequency stabilizers to secure the earth boundaries of the house.
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 3 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    Are these products tested for chemical composition purity?
+                    <i class="ph ph-caret-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        Yes, absolutely. We source our metals strictly from certified mines and cast them under controlled temperature grids. Every single strip and stud batch is laboratory-tested via spectrometers to ensure the elemental purity exceeds 99.6%. Authentic metal densities are crucial for correct Vastu vibration changes.
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 4 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    How do you energize or activate these remedies before shipment?
+                    <i class="ph ph-caret-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        Before shipping, all remedies undergo Vedic consecration rituals at our center. Chief pandits chant directional and elemental mantras (such as Agni Gayatri for copper strips) to dissolve residual mine energies, ensuring your product arrives spiritually active and ready for immediate Vastu correction benefits.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Architecture -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo"><img src="logo.png" alt="Agniyantra Logo" class="logo-img logo-light"></a>
+                <p>We provide authentic, certified, and spiritually energized Vastu remedies to restore architectural energy balances across your home and offices.</p>
+                <div class="footer-social">
+                    <button class="action-btn" title="Facebook"><i class="ph ph-facebook-logo"></i></button>
+                    <button class="action-btn" title="Instagram"><i class="ph ph-instagram-logo"></i></button>
+                    <button class="action-btn" title="YouTube"><i class="ph ph-youtube-logo"></i></button>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop remedies</a></li>
+                    <li><a href="about.html">About story</a></li>
+                    <li><a href="contact.html">Contact expert</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Vastu Remedies</h4>
+                <ul class="footer-links">
+                    <li><a href="shop.html?category=strips">Copper & Brass Strips</a></li>
+                    <li><a href="shop.html?category=studs">Solid Energy Studs</a></li>
+                    <li><a href="shop.html?category=idols">Sacred Helixes</a></li>
+                    <li><a href="shop.html?category=combo">Vastu Combo Packs</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Support & Trust</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">Purity Certificates</a></li>
+                    <li><a href="contact.html">Expert Consulting</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Agniyantra Ltd. All rights reserved.</p>
+            <p>Designed for Ultimate Architectural Harmony</p>
+        </div>
+    </footer>
+
+    <!-- DYNAMIC GLASSMORPHIC SLIDE-OUT CART DRAWER OVERLAY -->
+    <div class="cart-drawer-overlay">
+        <div class="cart-drawer">
+            <div class="cart-drawer-header">
+                <h3>Shopping Cart (<span class="cart-count">0</span>)</h3>
+                <button class="close-drawer-btn" onclick="closeCartDrawer()" aria-label="Close Cart"><i class="ph ph-x"></i></button>
+            </div>
+            
+            <!-- Dynamic Shipping Progress Bar -->
+            <div class="shipping-progress-container">
+                <div class="shipping-message">Add Vastu remedies to get FREE delivery nationwide!</div>
+                <div class="shipping-progress-bar">
+                    <div class="shipping-progress-fill"></div>
+                </div>
+            </div>
+            
+            <!-- Cart Items container -->
+            <div class="cart-drawer-items">
+                <!-- Dynamically injected by JS -->
+            </div>
+            
+            <div class="cart-drawer-footer">
+                <div class="drawer-subtotal-row">
+                    <span>Subtotal:</span>
+                    <span class="drawer-subtotal-val">₹0.00</span>
+                </div>
+                <div class="drawer-checkout-btns">
+                    <a href="cart.html" class="btn btn-outline" style="width: 100%;">View Full Cart</a>
+                    <a href="cart.html" class="btn btn-primary" style="width: 100%;">Proceed To Checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DYNAMIC ANIMATED QUICK VIEW MODAL OVERLAY -->
+    <div class="quickview-overlay">
+        <div class="quickview-modal" data-current-id="">
+            <button class="close-quickview-btn" onclick="closeQuickView()" aria-label="Close Modal"><i class="ph ph-x"></i></button>
+            <div class="quickview-content-grid">
+                <div class="quickview-gallery">
+                    <div class="quickview-main-img-box">
+                        <img src="" alt="Product Quick View" id="qvMainImage">
+                    </div>
+                </div>
+                <div class="quickview-info-box">
+                    <h2>Stainless Steel Vastu Strip</h2>
+                    <div class="quickview-price">₹1,999 <del>₹4,442</del></div>
+                    <p class="quickview-desc">Authentic element remedy...</p>
+                    
+                    <div class="quickview-actions">
+                        <div class="quickview-qty">
+                            <button class="quickview-qty-btn" onclick="const q=document.getElementById('qvQty'); if(q.value>1) q.value--;">-</button>
+                            <input type="number" id="qvQty" class="quickview-qty-input" value="1" readonly>
+                            <button class="quickview-qty-btn" onclick="document.getElementById('qvQty').value++;">+</button>
+                        </div>
+                        <button class="btn btn-primary" onclick="triggerQuickViewAddToCart()" style="flex: 1;">Add to Cart</button>
+                    </div>
+                    
+                    <div style="font-size: 0.8rem; color: var(--clr-text-muted);">
+                        <p style="margin-bottom: 0.4rem;"><i class="ph ph-seal-check" style="color: var(--clr-gold-dark)"></i> 100% pure metal certified by government labs.</p>
+                        <p><i class="ph ph-sparkles" style="color: var(--clr-gold-dark)"></i> Vedic energized by certified astrologers and acharyas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Global Toast notifications container -->
+    <div class="toast-container"></div>
+
+    <!-- Floating WhatsApp Helpdesk Badge -->
+    <a href="https://wa.me/919654666603" target="_blank" class="whatsapp-badge" aria-label="Chat on WhatsApp" title="WhatsApp Support">
+        <i class="ph ph-whatsapp-logo"></i>
+    </a>
+
+    <!-- Core Dynamic script -->
+    <script src="script.js"></script>
+    <script src="assets/js/chatbot.js"></script>
+    <script>
+        // Set up client-side FAQ Accordions
+        document.querySelectorAll('.faq-item').forEach(item => {
+            const questionBtn = item.querySelector('.faq-question');
+            const answerEl = item.querySelector('.faq-answer');
+            
+            questionBtn.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                
+                // Close all other items first
+                document.querySelectorAll('.faq-item').forEach(other => {
+                    other.classList.remove('active');
+                    other.querySelector('.faq-answer').style.maxHeight = null;
+                });
+                
+                if (!isActive) {
+                    item.classList.add('active');
+                    answerEl.style.maxHeight = answerEl.scrollHeight + "px";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
