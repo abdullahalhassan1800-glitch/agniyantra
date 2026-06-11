@@ -221,7 +221,7 @@ header.scrolled {
 }
 
 .logo-img {
-    height: 60px;
+    height: 80px;
     width: auto;
     object-fit: contain;
     display: block;
@@ -238,7 +238,7 @@ header.scrolled {
 
 @media (max-width: 768px) {
     .logo-img {
-        height: 45px;
+        height: 55px;
     }
 }
 

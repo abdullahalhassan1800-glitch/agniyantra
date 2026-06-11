@@ -52,10 +52,10 @@ header.scrolled { padding:0.25rem 0; box-shadow:var(--shadow-subtle); background
 .top-bar a:hover { color:var(--clr-gold); }
 .nav-container { max-width:1400px; margin:0 auto; padding:1.25rem 2rem; display:flex; justify-content:space-between; align-items:center; }
 .logo { display:flex; align-items:center; gap:0.5rem; }
-.logo-img { height:60px; width:auto; object-fit:contain; display:block; transition:var(--transition-premium); }
+.logo-img { height:80px; width:auto; object-fit:contain; display:block; transition:var(--transition-premium); }
 .logo-light { filter:none; }
 .logo-img:hover { transform:scale(1.05); }
-@media (max-width:768px) { .logo-img { height:45px; } }
+@media (max-width:768px) { .logo-img { height:55px; } }
 .nav-links { display:flex; gap:2.75rem; }
 .nav-links a { font-size:0.8rem; font-weight:700; text-transform:uppercase; letter-spacing:2px; position:relative; padding:0.25rem 0; color:var(--clr-text-muted); }
 .nav-links a:hover, .nav-links a.active { color:var(--clr-text-dark); }
