@@ -53,7 +53,7 @@ header.scrolled { padding:0.25rem 0; box-shadow:var(--shadow-subtle); background
 .nav-container { max-width:1400px; margin:0 auto; padding:1.25rem 2rem; display:flex; justify-content:space-between; align-items:center; }
 .logo { display:flex; align-items:center; gap:0.5rem; }
 .logo-img { height:60px; width:auto; object-fit:contain; display:block; transition:var(--transition-premium); }
-.logo-light { filter:brightness(0) invert(1); }
+.logo-light { filter:none; }
 .logo-img:hover { transform:scale(1.05); }
 @media (max-width:768px) { .logo-img { height:45px; } }
 .nav-links { display:flex; gap:2.75rem; }
