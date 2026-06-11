@@ -208,7 +208,7 @@ header.scrolled {
 .nav-container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 1.25rem 2rem;
+    padding: 1.5rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1847,7 +1847,7 @@ header.scrolled {
 footer {
     background: linear-gradient(180deg, var(--clr-cosmic) 0%, #06050C 100%);
     color: white;
-    padding: 7rem 2rem 3rem;
+    padding: 8rem 2rem 4rem;
     border-top: 1px solid rgba(212, 175, 55, 0.15);
 }
 
@@ -1874,7 +1874,7 @@ footer {
 }
 
 .footer-brand .logo img {
-    height: 50px;
+    height: 65px;
     width: auto;
 }
 
